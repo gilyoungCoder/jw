@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JW PICKS - Curated Gear for Musicians</title>
+  <meta name="description" content="뮤지션을 위한 엄선된 장비 & 추천 아이템">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 배경 그라디언트 애니메이션 -->
+  <div class="bg-gradient"></div>
+  <div class="bg-noise"></div>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container">
+      <div class="header-badge">CURATED BY JW</div>
+      <h1 class="logo">
+        <span class="logo-accent">JW</span> PICKS
+      </h1>
+      <p class="tagline">Music Gear & Life Essentials</p>
+      <div class="header-eq">
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 카테고리 필터 -->
+  <nav class="category-nav">
+    <div class="container">
+      <div class="cat-scroll">
+        <button class="cat-btn active" data-category="all">
+          <span class="cat-icon">*</span> ALL
+        </button>
+        <button class="cat-btn" data-category="audio">
+          <span class="cat-icon">&#9835;</span> AUDIO
+        </button>
+        <button class="cat-btn" data-category="tech">
+          <span class="cat-icon">&#9881;</span> TECH
+        </button>
+        <button class="cat-btn" data-category="life">
+          <span class="cat-icon">&#9733;</span> LIFE
+        </button>
+        <button class="cat-btn" data-category="food">
+          <span class="cat-icon">&#9749;</span> FOOD
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 상품 그리드 -->
+  <main class="container">
+    <section class="product-grid" id="productGrid"></section>
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <p>No items in this category yet.</p>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">JW PICKS</div>
+      <p class="affiliate-notice">
+        이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+      </p>
+      <p class="copyright">&copy; 2026 JW PICKS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
